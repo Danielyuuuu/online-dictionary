@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<StackPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SplashController">
+   <children>
+      <ImageView fitHeight="406.0" fitWidth="602.0">
+         <image>
+            <Image url="@../Resource/Artboard%20–%201@2x.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</StackPane>

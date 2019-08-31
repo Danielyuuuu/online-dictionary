@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="8.0" style="-fx-background-color: #383838;" stylesheets="@../Resource/box.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="server.RunningController">
+   <children>
+      <MenuBar style="-fx-background-color: #383838;">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Close" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Delete" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+         <children>
+            <Label fx:id="run" text="Server is Running ... ">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Label>
+            <Label layoutX="10.0" layoutY="10.0">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Label>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="wrong">
+                     <HBox.margin>
+                        <Insets left="340.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Button fx:id="shut" mnemonicParsing="false" onAction="#shutDown" text="Shut Down">
+                     <HBox.margin>
+                        <Insets left="130.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="220.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="280.0" />
+         </padding>
+      </VBox>
+   </children>
+</VBox>
